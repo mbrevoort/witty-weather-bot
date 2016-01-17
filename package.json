@@ -1,0 +1,24 @@
+{
+  "name": "witty-weather-bot",
+  "version": "1.1.0",
+  "description": "A simple but witty weather bot that uses wit.ai",
+  "main": "index.js",
+  "scripts": {
+      "start": "node server1.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mbrevoort/witty-weather-bot.git"
+  },
+  "author": "Mike Brevoort",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/mbrevoort/witty-weather-bot/issues"
+  },
+  "homepage": "https://github.com/mbrevoort/witty-weather-bot#readme",
+  "dependencies": {
+    "botkit": "0.0.5",
+    "request": "^2.67.0",
+    "witbot": "^2.0.0"
+  }
+}
