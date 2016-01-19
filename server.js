@@ -69,7 +69,7 @@ controller.hears('.*', 'direct_message,direct_mention', function (bot, message) 
   })
 
   wit.otherwise(function (bot, message) {
-    bot.reply(message, 'Are you Ben Myers? What is this nonesense you speak!?')
+    bot.reply(message, 'What is this nonesense you speak!?')
   })
 })
 
