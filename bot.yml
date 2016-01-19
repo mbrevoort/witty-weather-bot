@@ -2,4 +2,14 @@ name: Witty Weather Bot
 description: A Wit.ai powered weather bot with a little snark
 avatar: images/avatar.jpg
 background: images/background.jpg
-
+config:
+  - name: OPENWEATHER_KEY
+    friendly_name: Open Weather API Key
+    info: Get this key from the Open Weather App you created on the web
+    type: secret
+    global: true
+  - name: WIT_TOKEN
+    friendly_name: The Wit.ai API Token
+    info: This is the wit api token for your app on wit.ai
+    type: secret
+    global: true
