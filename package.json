@@ -4,7 +4,7 @@
   "description": "A simple but witty weather bot that uses wit.ai",
   "main": "index.js",
   "scripts": {
-      "start": "node server.js"
+      "start": "node server1.js"
   },
   "repository": {
     "type": "git",
