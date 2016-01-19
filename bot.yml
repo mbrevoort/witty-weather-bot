@@ -13,3 +13,6 @@ config:
     info: This is the wit api token for your app on wit.ai
     type: secret
     global: true
+  - name: Test
+    friendly_name: Test
+    type: text
