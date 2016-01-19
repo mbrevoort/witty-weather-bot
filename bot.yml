@@ -2,6 +2,10 @@ name: Witty Weather Bot
 description: A Wit.ai powered weather bot with a little snark
 avatar: images/avatar.jpg
 background: images/background.jpg
+screenshots:
+  - screenshot: images/sun.png
+  - screenshot: images/rain.png
+  - screenshot: images/snow.png
 config:
   - name: OPENWEATHER_KEY
     friendly_name: Open Weather API Key
