@@ -27,14 +27,14 @@ controller.hears('.*', 'direct_message,direct_mention', function (bot, message) 
   wit.hears('hello', 0.53, function (bot, message, outcome) {
     bot.startConversation(message, function (_, convo) {
       convo.say('Good day!')
-      convo.ask('Would you like to know the weather?', function (response, convo) {
+      convo.ask('May I fetch the weather for you?', function (response, convo) {
         witbot.process(response.text)
           .hears('yes', 0.5, function (outcome) {
-            convo.ask('OK, for where?', getWeather)
+            convo.ask('OK, for where then?', getWeather)
             convo.next()
           })
           .hears('no', 0.5, function (outcome) {
-            convo.say('Fine then, well don\'t complain to me if you get caught out in the rain unexpectedly')
+            convo.say('Fine then, well don\'t blame me if you get caught out in the cold')
             convo.next()
           })
           .otherwise(function (outcome) {
@@ -69,7 +69,7 @@ controller.hears('.*', 'direct_message,direct_mention', function (bot, message) 
   })
 
   wit.otherwise(function (bot, message) {
-    bot.reply(message, 'What is this nonesense you speak!?')
+    bot.reply(message, 'Are you Ben Myers? What is this nonesense you speak!?')
   })
 })
 
