@@ -18,8 +18,6 @@ controller.hears('^What is the weather in (.*)', 'direct_message,direct_mention'
 
 controller.hears('^What is the magic word?', 'direct_message,direct_mention', function (bot, message) {
   bot.reply(message, 'Please, of course.')
-  bot.reply(message, 'Who doesn\'t know that?.')
-  bot.reply(message, 'That was a rhetorical question.')
 })
 
 controller.hears('.*', 'direct_message,direct_mention', function (bot, message) {
