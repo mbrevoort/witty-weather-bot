@@ -1,3 +1,1 @@
 # witty-weather-bot
-
-
