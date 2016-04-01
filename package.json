@@ -4,7 +4,7 @@
   "description": "A simple but witty weather bot that uses wit.ai",
   "main": "index.js",
   "scripts": {
-      "start": "node server3.js"
+    "start": "node server3.js"
   },
   "repository": {
     "type": "git",
@@ -17,7 +17,8 @@
   },
   "homepage": "https://github.com/mbrevoort/witty-weather-bot#readme",
   "dependencies": {
-    "botkit": "0.0.5",
+    "beepboop-botkit": "^1.1.1",
+    "botkit": "0.0.14",
     "request": "^2.67.0",
     "witbot": "^2.0.0"
   }

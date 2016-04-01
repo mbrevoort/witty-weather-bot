@@ -8,10 +8,7 @@ var weather = require('./weather')(openWeatherApiKey)
 
 var controller = Botkit.slackbot({ debug: false })
 
-controller.spawn({ token: slackToken }).startRTM(function (err, bot, payload) {
-  if (err) throw new Error('Error connecting to slack: ', err)
-  console.log('Connected to Slack')
-})
+require('beepboop-botkit').start(controller);
 
 controller.hears('.*', 'direct_message,direct_mention', function (bot, message) {
   var wit = witbot.process(message.text, bot, message)
